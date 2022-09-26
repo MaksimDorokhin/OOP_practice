@@ -21,8 +21,9 @@ public class Rectangle extends Polygon {
     }
 
     @Override
-    public void getInfo() {
-        System.out.println("Rectangle properties:");
-        super.getInfo();
+    public StringBuilder getInfo() {
+        StringBuilder info = new StringBuilder("Rectangle properties:\n");
+        info.append(super.getInfo());
+        return info;
     }
 }

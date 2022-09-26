@@ -11,14 +11,21 @@
 
 package Seminars.S2T1Figures;
 
+import Seminars.S2T1Figures.Figures.Base.Figure;
 import Seminars.S2T1Figures.Figures.Circle;
 import Seminars.S2T1Figures.Figures.Rectangle;
 import Seminars.S2T1Figures.Figures.Square;
 import Seminars.S2T1Figures.Figures.Triangle;
 
+import java.util.ArrayList;
+
 public class Program {
 
-
+    static void printer(ArrayList<Figure> list) {
+        for (Figure item: list) {
+            System.out.println(item.getInfo());
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -26,14 +33,11 @@ public class Program {
         Rectangle rectangle = new Rectangle(5, 10);
         Square square = new Square(5);
         Circle circle = new Circle(5);
-        triangle.getInfo();
-        rectangle.getInfo();
-        square.getInfo();
-        circle.getInfo();
-
-
-
+        ArrayList<Figure> list = new ArrayList<>();
+        list.add(triangle);
+        list.add(square);
+        list.add(rectangle);
+        list.add(circle);
+        printer(list);
     }
-
-
 }

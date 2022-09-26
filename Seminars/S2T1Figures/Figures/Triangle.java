@@ -27,8 +27,9 @@ public class Triangle extends Polygon {
     }
 
     @Override
-    public void getInfo() {
-        System.out.println("Triangle properties:");
-        super.getInfo();
+    public StringBuilder getInfo() {
+        StringBuilder info = new StringBuilder("Triangle properties:\n");
+        info.append(super.getInfo());
+        return info;
     }
 }

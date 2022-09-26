@@ -7,8 +7,11 @@ public class Square extends Rectangle{
     }
 
     @Override
-    public void getInfo() {
-        System.out.println("Square properties:");
-        super.getInfo();
+    public StringBuilder getInfo() {
+        StringBuilder info = new StringBuilder();
+        info.append(super.getInfo());
+        info.replace(0,22, "Square properties:\n");
+
+        return info;
     }
 }

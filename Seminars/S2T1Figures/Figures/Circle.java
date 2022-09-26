@@ -26,10 +26,11 @@ public class Circle extends Figure implements ILengthable, IArea {
     }
 
     @Override
-    public void getInfo() {
-        System.out.println("Circle properties:");
-        System.out.printf("Radius: %d; ", radius);
-        System.out.printf("Circle length: %f; ", circleLength());
-        System.out.printf("Area: %f.\n", area());
+    public StringBuilder getInfo() {
+        StringBuilder info = new StringBuilder("Square properties:\n");
+        info.append("Radius: ").append(radius).append("; ");
+        info.append("Circle length: ").append(circleLength()).append("; ");
+        info.append("Area: ").append(area()).append(".\n");
+        return info;
     }
 }

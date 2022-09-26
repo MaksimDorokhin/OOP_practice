@@ -10,13 +10,15 @@ public abstract class Polygon extends Figure implements IPerimeterable {
     }
 
     @Override
-    public void getInfo() {
-        System.out.print("Sides:");
+    public StringBuilder getInfo() {
+        StringBuilder info = new StringBuilder("Sides:");
         for (int item: sides) {
-            System.out.print(" " + item);
+            info.append(" ").append(item).append(",");
         }
-        System.out.printf("; Perimeter: %f; ", perimeter());
-        System.out.printf("Area: %f.\n", area());
+        info.delete(info.length()-1, info.length());
+        info.append("; Perimeter: ").append(perimeter()).append("; ");
+        info.append("Area: ").append(area()).append(".\n");
+        return info;
     }
 
     @Override
