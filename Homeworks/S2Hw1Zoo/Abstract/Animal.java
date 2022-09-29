@@ -1,4 +1,4 @@
-package Homeworks.S2Hw1Zoo;
+package Homeworks.S2Hw1Zoo.Abstract;
 
 public abstract class Animal {
     protected int height;

@@ -1,6 +1,8 @@
 package Homeworks.S2Hw1Zoo;
 
-public abstract class Birds extends Animal{
+import Homeworks.S2Hw1Zoo.Abstract.Animal;
+
+public abstract class Birds extends Animal {
     protected int flightAltitude;
 
     public Birds(int height, Double weight, String eyesColor, int flightAltitude) {
