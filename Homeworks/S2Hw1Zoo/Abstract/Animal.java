@@ -2,23 +2,20 @@ package Homeworks.S2Hw1Zoo.Abstract;
 
 public abstract class Animal {
     protected int height;
-    protected Double weight;
+    protected int weight;
     protected String eyesColor;
 
-    public Animal(int height, Double weight, String eyesColor) {
+    public Animal(int height, int weight, String eyesColor) {
         this.height = height;
         this.weight = weight;
         this.eyesColor = eyesColor;
-    }
-
-    public Animal() {
     }
 
     public int getHeight() {
         return height;
     }
 
-    public Double getWeight() {
+    public int getWeight() {
         return weight;
     }
 

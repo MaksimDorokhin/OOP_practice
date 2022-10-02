@@ -8,7 +8,7 @@ public abstract class Domestic extends Animal implements Itender {
     protected String vaccinated;
     protected String woolColor;
 
-    public Domestic(int height, Double weight, String eyesColor, String nickname,
+    public Domestic(int height, int weight, String eyesColor, String nickname,
                     String breed, String vaccinated, String woolColor) {
         super(height, weight, eyesColor);
         this.nickname = nickname;

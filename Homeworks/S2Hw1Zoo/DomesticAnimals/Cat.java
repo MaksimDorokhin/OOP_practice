@@ -6,7 +6,7 @@ import Homeworks.S2Hw1Zoo.Interfaces.Ihairiness;
 public class Cat extends Domestic implements Ihairiness {
     protected boolean hasHairiness;
 
-    public Cat(int height, Double weight, String eyesColor, String nickname,
+    public Cat(int height, int weight, String eyesColor, String nickname,
                String breed, String vaccinated, String woolColor, boolean hasHairiness) {
         super(height, weight, eyesColor, nickname, breed, vaccinated, woolColor);
         this.hasHairiness = hasHairiness;
@@ -20,7 +20,7 @@ public class Cat extends Domestic implements Ihairiness {
 
     @Override
     public String tender() {
-        return super.nickname +"Murrr";
+        return super.nickname +": Murrr";
     }
 
 

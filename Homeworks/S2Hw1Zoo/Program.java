@@ -13,21 +13,21 @@ import Homeworks.S2Hw1Zoo.WildAnimals.Wolf;
 public class Program {
     public static void main(String[] args) {
 
-        Domestic dexter = new Cat(25, 4.8, "green",
+        Domestic dexter = new Cat(25, 5, "green",
                 "Dexter", "mestizo", "Multifel 08.11.2021",
                 "black&white", true);
-        Domestic sphinxie = new Cat(30, 3.2, "brown",
+        Domestic sphinxie = new Cat(30, 3, "brown",
                 "Sphinxie", "Sphinx", "None",
                 "black&white", false);
-        Domestic doggie = new Dog(40, 8.5, "brown",
+        Domestic doggie = new Dog(40, 9, "brown",
                 "Sharik", "mongrel", "None",
                 "gray", false);
-        Wild tigrik = new Tiger(90, 200.0, "orange",
+        Wild tigrik = new Tiger(90, 200, "orange",
                 "Far East", "15.04.2022");
-        Wild volchek = new Wolf(90, 100.0, "blue",
+        Wild volchek = new Wolf(90, 100, "blue",
                 "Syberia", "20.06.2022", true);
-        Birds henie = new Hen(30,2.5, "brown");
-        Birds storkie = new Stork(80,3.5, "blue", 2500);
+        Birds henie = new Hen(30,2, "brown");
+        Birds storkie = new Stork(80,3, "blue", 2500);
 
         Zoo zoo = new Zoo();
         zoo.addAnimal(dexter);
@@ -38,14 +38,7 @@ public class Program {
         zoo.addAnimal(henie);
         zoo.addAnimal(storkie);
 
-        System.out.println(zoo.getAnimalInfo(0));
-        System.out.println(zoo.getAnimalInfo(1));
-        System.out.println(zoo.getAnimalInfo(2));
-        System.out.println(zoo.getAnimalInfo(3));
-        System.out.println(zoo.getAnimalInfo(4));
-        System.out.println(zoo.getAnimalInfo(5));
-        System.out.println(zoo.getAnimalInfo(6));
-        System.out.println(zoo.makeSoundAtIndex(3));
-        System.out.println(zoo.makeAllSound());
+        ConsoleUI menu = new ConsoleUI(zoo);
+        menu.run();
     }
 }

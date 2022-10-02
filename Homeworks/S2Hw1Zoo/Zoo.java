@@ -41,7 +41,7 @@ public class Zoo {
             sb.append(String.format("""
                             Information about %s at index %d:
                             Height: %d cm
-                            Weight: %f kg
+                            Weight: %d kg
                             Eyes color: %s
                             """,
                     zoo.get(i).getClass().getSimpleName(), i,
@@ -87,9 +87,16 @@ public class Zoo {
         }
     }
 
+    public String getAllAnimalsInfo () {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < zoo.size(); i++)
+            sb.append(getAnimalInfo(i)).append("\n");
+        return sb.toString();
+    }
+
     public String makeSoundAtIndex(int i) {
         if (i < 0 || i >= zoo.size())
-            return ("There is no animal with specified index!");
+            return ("There is no animal at specified index!");
         else
             return zoo.get(i).makeSound();
     }

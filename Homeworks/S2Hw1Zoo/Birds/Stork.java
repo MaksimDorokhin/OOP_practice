@@ -4,7 +4,7 @@ import Homeworks.S2Hw1Zoo.Abstract.Birds;
 
 public class Stork extends Birds {
 
-    public Stork(int height, Double weight, String eyesColor, int flightAltitude) {
+    public Stork(int height, int weight, String eyesColor, int flightAltitude) {
         super(height, weight, eyesColor, flightAltitude);
     }
 

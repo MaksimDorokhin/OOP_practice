@@ -4,7 +4,7 @@ import Homeworks.S2Hw1Zoo.Abstract.Birds;
 
 public class Hen extends Birds {
 
-    public Hen(int height, Double weight, String eyesColor) {
+    public Hen(int height, int weight, String eyesColor) {
         super(height, weight, eyesColor, 1);
     }
 

@@ -3,7 +3,7 @@ package Homeworks.S2Hw1Zoo.Abstract;
 public abstract class Birds extends Animal {
     protected int flightAltitude;
 
-    public Birds(int height, Double weight, String eyesColor, int flightAltitude) {
+    public Birds(int height, int weight, String eyesColor, int flightAltitude) {
         super(height, weight, eyesColor);
         this.flightAltitude = flightAltitude;
     }

@@ -7,7 +7,7 @@ import Homeworks.S2Hw1Zoo.Interfaces.ItrainingAvailability;
 public class Dog extends Domestic implements IbeeingTrained, ItrainingAvailability {
     protected boolean trainingAvailability;
 
-    public Dog(int height, Double weight, String eyesColor, String nickname,
+    public Dog(int height, int weight, String eyesColor, String nickname,
                String breed, String vaccinated, String woolColor, boolean trainingAvailability) {
         super(height, weight, eyesColor, nickname, breed, vaccinated, woolColor);
         this.trainingAvailability = trainingAvailability;
