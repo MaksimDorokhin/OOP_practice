@@ -21,3 +21,4 @@ public class DivModel extends CalcModel {
 
     
 }
+

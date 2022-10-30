@@ -1,6 +1,8 @@
-окт. 27, 2022 1:09:24 AM UIView consoleUICalc
+окт. 27, 2022 1:20:35 AM UIView consoleUICalc
 INFO: the calculator starts
-окт. 27, 2022 1:09:26 AM UIView consoleUICalc
-INFO: a common regime is initialised
-окт. 27, 2022 1:09:30 AM Presenter buttonClick
-INFO: 1,000000 + 1,000000 = 2,000000
+окт. 27, 2022 1:20:41 AM UIView consoleUICalc
+INFO: a complex regime is initialised
+окт. 27, 2022 1:21:00 AM PresenterComplex buttonClickComplex
+INFO: 1.1+0.1i * 3.3+4.0i = 7.960000000000001+0.0i
+окт. 27, 2022 1:21:18 AM UIView consoleUICalc
+INFO: the calculator finishes

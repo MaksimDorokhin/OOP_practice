@@ -22,3 +22,4 @@ public class SumModel extends CalcModel{
 
     
 }
+

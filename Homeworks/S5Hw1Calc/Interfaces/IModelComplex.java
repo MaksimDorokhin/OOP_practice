@@ -7,3 +7,4 @@ public interface IModelComplex {
     void setA(Complex value);
     void setB(Complex value);
 }
+

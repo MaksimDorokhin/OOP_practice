@@ -8,3 +8,4 @@ public interface ILogger {
     void log(String myText);
     void log(String string, String string2, String string3);
 }
+

@@ -42,3 +42,4 @@ public class UIView {
         logger.log(UIView.class.getSimpleName(), "consoleUICalc", "the calculator finishes");
     }
 }
+

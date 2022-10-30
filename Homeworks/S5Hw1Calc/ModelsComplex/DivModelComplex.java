@@ -23,3 +23,4 @@ public class DivModelComplex extends CalcModelComplex {
     }
     
 }
+

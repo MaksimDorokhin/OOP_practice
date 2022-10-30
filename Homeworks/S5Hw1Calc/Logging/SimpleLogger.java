@@ -35,3 +35,4 @@ public class SimpleLogger implements ILogger{
     }
     
 }
+

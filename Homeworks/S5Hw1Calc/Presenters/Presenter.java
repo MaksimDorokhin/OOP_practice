@@ -33,3 +33,4 @@ public class Presenter {
         mylogger.log(Presenter.class.getSimpleName(), "buttonClick", resString);
     }
 }
+

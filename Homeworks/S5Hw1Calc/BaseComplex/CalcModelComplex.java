@@ -7,3 +7,4 @@ public abstract class CalcModelComplex implements IModelComplex {
     protected Complex a;
     protected Complex b;
 }
+

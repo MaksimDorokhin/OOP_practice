@@ -22,3 +22,4 @@ public class ProdModelComplex extends CalcModelComplex {
         super.b = b;
     }
 }
+

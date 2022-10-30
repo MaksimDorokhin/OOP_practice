@@ -14,9 +14,7 @@ public class JSONmanager {
         this.path = path;
     }
 
-    public <E> String mutogen( input) {
-
-    }
+//    public <E> String mutogen( input) {
 
     public <E> void write(E data, boolean append) throws IOException {
         FileWriter writer = new FileWriter(this.path, append);

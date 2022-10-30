@@ -8,3 +8,4 @@ public abstract class CalcModel implements IModel {
 
     
 }
+

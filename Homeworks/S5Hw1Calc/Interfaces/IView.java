@@ -7,3 +7,4 @@ public interface IView {
 
     void showResult(String stringName);
 }
+

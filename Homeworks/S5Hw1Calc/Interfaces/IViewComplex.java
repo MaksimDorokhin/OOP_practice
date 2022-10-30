@@ -7,3 +7,4 @@ public interface IViewComplex {
 
     String showResult(String stringName);
 }
+

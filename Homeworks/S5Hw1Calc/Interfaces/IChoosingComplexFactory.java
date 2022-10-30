@@ -7,3 +7,4 @@ import Homeworks.S5Hw1Calc.Complex.Complex;
 public interface IChoosingComplexFactory {
     IModelComplex chooseModelComplex(String sign, List<Complex> operandList);
 }
+
