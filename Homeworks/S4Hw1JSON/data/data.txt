@@ -1,3 +1,0 @@
-{"name":TEK PT 1000 temperature sensor,"article":12342134,"quantity":50}
-"Hello world!"
-2022

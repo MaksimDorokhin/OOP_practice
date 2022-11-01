@@ -1,28 +1,35 @@
 package Homeworks.S4Hw1JSON;
 
-import Homeworks.S4Hw1JSON.Classes.FReader;
-import Homeworks.S4Hw1JSON.Classes.TestObject;
-
 import java.io.IOException;
 
+import Homeworks.S4Hw1JSON.Classes.Cat;
+import Homeworks.S4Hw1JSON.JSONManager.JSONmanager;
 
 public class Program {
+
     public static void main(String[] args) throws IOException {
+        JSONmanager m = new JSONmanager("Homeworks/S4Hw1JSON/data/file.json");
+        String myString = "Hello world!";
+        m.write(myString, true);
+        int myNumber = 28;
+        m.write(myNumber, true);
+        Cat myCat = new Cat("Dexter", 36, 5, "black&white");
+        m.write(myCat, true);
 
-        FReader reader = new FReader();
+        var out = m.read("var");
 
-        reader.printFile();
-
-        TestObject testObject = reader.getElementFromFile(TestObject.class.getSimpleName());
-        System.out.println("Найден объект: testObject со следующими полями");
-        System.out.printf("name = %s\narticle = %d\nquantity = %d\n", testObject.getName(),
-                                                                 testObject.getArticle(),
-                                                                 testObject.getQuantity());
-
-        String s = reader.getElementFromFile(String.class.getSimpleName());
-        System.out.printf("\nНайдена строка: %s\n",s);
-
-        int number = reader.getElementFromFile(int.class.getSimpleName());
-        System.out.printf("\nНайдено число: %d\n",number);
+        if (out.getClass().getSimpleName().equals(String.class.getSimpleName())) {
+            String outStr = m.read(String.class.getSimpleName());
+            System.out.printf("It's a %s class:\n", outStr.getClass().getSimpleName());
+            System.out.println(outStr);
+        } else if (out.getClass().getSimpleName().equals(Integer.class.getSimpleName())) {
+            Integer outInt = m.read(Integer.class.getSimpleName());
+            System.out.printf("It's a %s class:\n", outInt.getClass().getSimpleName());
+            System.out.println(outInt);
+        } else if (out.getClass().getSimpleName().equals(Cat.class.getSimpleName())) {
+            Cat outCat = m.read(Cat.class.getSimpleName());
+            System.out.printf("It's a %s class:\n", outCat.getClass().getSimpleName());
+            System.out.println(outCat);
+        }
     }
 }
